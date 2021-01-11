@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ===== ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <title>Welcome Hyper Phoo | Have a productive day!</title>
+  </head>
+  <body>
+    <main>
+      <!-- Date Section -->
+      <section id="dateBox">
+        <h1 id="date">To Do List</h1>
+      </section>
+
+      <!-- Input Section -->
+      <section id="inputBox">
+        <input type="text" placeholder="Enter your task" id="addNewTask" />
+        <button id="addTaskBtn">
+          <i class="bx bx-plus"></i>
+        </button>
+      </section>
+
+      <!-- Box Section -->
+      <section id="box">
+        <!-- Todo Box -->
+        <div id="todoBox">
+          <h1>Todo List</h1>
+
+          <div class="todoList">
+            <!-- <div id="todoForm">
+            <input type="checkbox" />
+            <p>To study</p>
+            <button type="button" class="add-btn">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </button>
+            <button type="button" class="delete-btn">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div> -->
+          </div>
+        </div>
+
+        <!-- Working Box -->
+        <div id="workingBox">
+          <h1>Working List</h1>
+
+          <div class="workList">
+            <!-- <div id="todoForm">
+            <input type="checkbox" />
+            <p>To study</p>
+            <button type="button" class="add-btn">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </button>
+            <button type="button" class="delete-btn">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div> -->
+          </div>
+        </div>
+
+        <!-- Done Box -->
+
+        <div id="doneBox">
+          <h1>Done List</h1>
+
+          <div class="doneList">
+            <!-- <div id="todoForm">
+            <input type="checkbox" />
+            <p>To study</p>
+            <button type="button" class="delete-btn">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div> -->
+          </div>
+      </section>
+    </main>
+  </body>
+  <!-- JS -->
+  <script src="script.js"></script>
+</html>

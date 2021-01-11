@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #7ebdb4; */
+  background-color: #2d6187;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dateBox {
+  margin-top: 100px;
+  color: white;
+  font-size: 30px;
+}
+#todoBox h1,
+#workingBox h1,
+#doneBox h1 {
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+#todoBox h1 {
+  background-color: #28abb9;
+}
+#workingBox h1 {
+  background-color: #f39233;
+}
+#doneBox h1 {
+  background-color: #a8dda8;
+}
+#inputBox {
+  margin-top: 70px;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+#inputBox input[type="text"] {
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  top: 10px;
+  font-size: 20px;
+  width: 400px;
+  height: 55px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+#inputBox input[type="text"]:focus {
+  outline: none;
+  border: 1px solid orange;
+  box-shadow: 0 0 5px orange;
+}
+#inputBox button {
+  border-radius: 50px;
+  border-width: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: orange;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+}
+#inputBox button i {
+  font-size: 50px;
+  color: white;
+}
+#inputBox button:focus {
+  outline: none;
+  border: none;
+}
+#box {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 20px;
+}
+#todoForm {
+  max-width: 200%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+p {
+  font-size: 20px;
+  font-weight: 200;
+  width: 250px;
+}
+#doneBox p {
+  width: 72%;
+}
+#todoForm:last-child {
+  border-bottom: 0;
+}
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #f4a548;
+}
+input[type="checkbox"] {
+  margin: 20px;
+}
+#todoForm button {
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.add-btn {
+  color: rgb(23, 143, 179);
+}
+.delete-btn {
+  color: rgb(216, 45, 73);
+}
+.add-btn:hover {
+  color: rgb(28, 179, 23);
+}
+.delete-btn:hover {
+  color: rgb(255, 45, 45);
+}
+ion-icon {
+  font-size: 24px;
+}
