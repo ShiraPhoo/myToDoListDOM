@@ -42,8 +42,12 @@ function renderTodo() {
     <button type="button" onclick="deleteTodoTask(this,${index})" class="delete-btn">
       <ion-icon name="close-circle-outline"></ion-icon>
     </button>
-  </div>`;
+  </div>
+  `;
   }
+
+  get("#modal").style.display = "none";
+  console.log(todos);
 }
 
 // Clear Todos
@@ -71,6 +75,7 @@ function renderWorkingTask() {
   </div>`;
   }
 }
+
 // Clear workingTasks
 function clearWorkingTask(value, index) {
   index > -1
@@ -93,8 +98,8 @@ function renderDoneTask() {
     </div>`;
   }
 }
-// Delete DoneTasks
 
+// Delete DoneTasks
 function clearDoneTask(value, index) {
   index > -1
     ? (doneTasks.splice(index, 1), renderDoneTask())
@@ -126,9 +131,17 @@ function addWorkTask(ele, index) {
 // Delete Todo Task
 function deleteTodoTask(ele, index) {
   console.log(index);
-  index > -1
-    ? (todos.splice(index, 1), renderTodo())
-    : console.log("It is not found!");
+  get("#modal").style.display = "block";
+
+  get(".cancel").onclick = (e) => {
+    get("#modal").style.display = "none";
+  };
+
+  get(".delete").onclick = (e) => {
+    index > -1
+      ? (todos.splice(index, 1), renderTodo())
+      : console.log("It is not found!");
+  };
 }
 
 // Delete WorkingTask
