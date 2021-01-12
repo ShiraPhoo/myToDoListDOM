@@ -192,6 +192,7 @@ hr {
   padding: 23px;
   outline: none;
   position: relative;
+  width: 150px;
 }
 .modal__actions ion-icon {
   font-size: 17px;
@@ -199,6 +200,7 @@ hr {
   /* top: 500px; */
   margin-left: 1px;
 }
+
 .modal__actions .cancel:hover {
   color: rgb(197, 136, 22);
 }
