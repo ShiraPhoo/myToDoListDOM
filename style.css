@@ -197,7 +197,7 @@ hr {
   font-size: 17px;
   position: absolute;
   /* top: 500px; */
-  margin-left: 3px;
+  margin-left: 1px;
 }
 .modal__actions .cancel:hover {
   color: rgb(197, 136, 22);
